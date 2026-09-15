@@ -1,0 +1,12 @@
+name: Publish reviewed Dolce Vita redesign
+on:
+  push:
+    branches: [gh-pages]
+    paths: [.github/workflows/publish-reviewed-20260915.yml]
+permissions:
+  contents: write
+jobs:
+  publish:
+    uses: SharpSites-demo/sparta-gym-spa-ritik-demo/.github/workflows/publish-reviewed-html.yml@41cd0e039ca25ad2234ffc0978649d9e00875f09
+    with:
+      expected_sha256: 5adbb3ac3167a7b1af6488eeb41597a3e690b19589defdccb5f98990ad63c1d0
